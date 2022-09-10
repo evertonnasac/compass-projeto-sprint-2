@@ -1,0 +1,53 @@
+header{
+    width: 95%;
+    height: 100px;
+    
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 auto;
+
+
+    .content-logo{
+        strong{
+            color: #5468e7;
+            font-size: 40px;
+        }
+        & img:first-child{
+            background-color: #5468e7;
+
+        }
+        
+    }
+
+    .itens-menu{
+        margin: 0;
+
+        li{
+            display: inline;
+            text-decoration: none;
+            margin-left: 75px;
+
+            color: #5468e7;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        li:hover{
+            color: #8b8b8b;
+        }
+    }
+
+    .btn-contact{
+        background-color: #232340;
+        border-radius: 8px;
+        width: 10%;
+        height: 40%;
+        color: #fff
+    }
+    
+  
+
+}

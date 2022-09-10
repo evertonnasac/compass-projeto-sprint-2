@@ -1,0 +1,14 @@
+@import "../abstract/medias";
+
+@media (max-width:$max-width-tablet) {
+    header{
+        .itens-menu{
+            li{
+    
+                margin-left: 50px;
+            }
+        }
+    }
+    
+    
+}
