@@ -1,0 +1,133 @@
+@import "../abstract/medias";
+
+@media (orientation: portrait){
+    //(min-height: 650px) and 
+
+    .hero{
+        flex-direction: column;
+        justify-content: flex-end;
+    
+        .image-line-hero{
+            top: -25px;
+            left: 50%;
+            height: 90%;
+            width: 40%;
+        }
+    
+        .text-hero{
+            width: 90%;
+            height: 50%;
+            position: relative;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+    
+            .title-hero{
+                width: 250px;
+                font-size: 48px;
+                line-height:48px;
+            }
+            .resume-hero{
+                width: 310px;
+                font-size: 18px;
+                line-height: 32px;
+            }
+
+            .btn-recent-work{
+                height: 15%;
+                position: absolute;
+                bottom: -40px;
+            }
+    
+        }
+    
+        .box-image-hero{
+            width: 80%;
+            height: 50%;
+
+            align-self: flex-end;
+            position: relative;
+        }
+    
+    }
+
+    .box-controls{
+        display: none;
+    }
+    
+}
+
+@media (max-width:300px){
+    .hero{
+        .text-hero{
+            justify-content: space-evenly;
+            .title-hero{
+                font-size: 32px;
+
+            }
+            .resume-hero{
+                font-size: 12px;
+                width: 95%;
+            }
+        }
+    }
+
+}
+
+
+
+@media (min-height:800px) and (min-width: 500px){
+    .hero{
+        .text-hero{
+            .title-hero{
+                font-size: 68px;
+                width: 300px;
+                line-height: 72px;
+
+            }
+            .resume-hero{
+                font-size: 26px;
+                width: 400px;
+                line-height: 30px;
+            }
+        }
+    }
+
+}
+
+
+@media (orientation:landscape) and (max-height:500px){
+    .hero{
+        .text-hero{
+
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-around;
+
+            .title-hero{
+                padding-left: 10px;
+            }
+            @media(max-height:305px){
+                .title-hero{
+                    font-size: 32px;
+                }
+                
+            }
+
+            .btn-recent-work{
+                width: 15%;
+                min-width: 100px;
+                height: 40px;
+            }
+        
+        }
+        .box-image-hero{
+            position: absolute;
+            right: 0;
+            opacity: 0.2;
+           
+        }
+    }
+
+}

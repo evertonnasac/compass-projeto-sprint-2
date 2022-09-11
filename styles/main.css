@@ -46,18 +46,43 @@ header .btn-contact {
   height: 40%;
   color: #fff;
 }
+header .menu-mobile {
+  display: none;
+}
 
-@media (max-width: 900px) {
+@media (max-width: 880px) {
   header .itens-menu li {
     margin-left: 50px;
   }
 }
+@media (max-width: 880px) {
+  header .itens-menu, header .btn-contact {
+    display: none;
+  }
+  header .menu-mobile {
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 100%;
+  }
+  header .menu-mobile div {
+    position: absolute;
+    width: 100%;
+    border-top: 3px solid;
+  }
+  header .menu-mobile div:first-child {
+    top: 45%;
+  }
+  header .menu-mobile div:last-child {
+    top: 55%;
+  }
+}
 .hero {
   width: 90%;
-  height: calc(100vh - 110px);
+  height: calc(100vh - 135px);
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .hero .image-line-hero {
   position: absolute;
@@ -74,6 +99,9 @@ header .btn-contact {
 .hero .text-hero {
   width: 40%;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .hero .text-hero p {
   margin: 0;
@@ -81,7 +109,6 @@ header .btn-contact {
 }
 .hero .text-hero .title-hero {
   font-size: 80px;
-  height: 280px;
   font-weight: 700;
   line-height: 80px;
   letter-spacing: -1px;
@@ -94,35 +121,13 @@ header .btn-contact {
   width: 367px;
 }
 .hero .text-hero .btn-recent-work {
-  min-width: 150px;
-  height: 10%;
+  height: 8%;
+  width: 50%;
   background-color: #5684e7;
   border: none;
   border-radius: 8px;
-  margin-top: 5%;
   color: #fff;
   cursor: pointer;
-}
-.hero .text-hero .box-controls {
-  position: absolute;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 150px;
-  height: 50px;
-}
-.hero .text-hero .box-controls .btn-scroll-down {
-  width: 40px;
-  height: 40px;
-  font-size: 30px;
-  border-radius: 100%;
-  border: none;
-  color: #fff;
-  background-color: #c897e4;
-}
-.hero .text-hero .box-controls span {
-  color: #232340;
 }
 .hero .box-image-hero {
   width: 60%;
@@ -150,6 +155,28 @@ header .btn-contact {
   right: 0;
 }
 
+.box-controls {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 150px;
+  height: 50px;
+}
+.box-controls .btn-scroll-down {
+  width: 35px;
+  height: 35px;
+  font-size: 30px;
+  border-radius: 100%;
+  border: none;
+  color: #fff;
+  background-color: #c897e4;
+}
+.box-controls span {
+  color: #232340;
+}
+
 @media (max-width: 900px) {
   .hero .text-hero .title-hero {
     font-size: 64px;
@@ -168,5 +195,102 @@ header .btn-contact {
   }
   .hero .text-hero .resume-hero {
     width: 270px;
+  }
+}
+@media (orientation: portrait) {
+  .hero {
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .hero .image-line-hero {
+    top: -25px;
+    left: 50%;
+    height: 90%;
+    width: 40%;
+  }
+  .hero .text-hero {
+    width: 90%;
+    height: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .hero .text-hero .title-hero {
+    width: 250px;
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .hero .text-hero .resume-hero {
+    width: 310px;
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .hero .text-hero .btn-recent-work {
+    height: 15%;
+    position: absolute;
+    bottom: -40px;
+  }
+  .hero .box-image-hero {
+    width: 80%;
+    height: 50%;
+    align-self: flex-end;
+    position: relative;
+  }
+  .box-controls {
+    display: none;
+  }
+}
+@media (max-width: 300px) {
+  .hero .text-hero {
+    justify-content: space-evenly;
+  }
+  .hero .text-hero .title-hero {
+    font-size: 32px;
+  }
+  .hero .text-hero .resume-hero {
+    font-size: 12px;
+    width: 95%;
+  }
+}
+@media (min-height: 800px) and (min-width: 500px) {
+  .hero .text-hero .title-hero {
+    font-size: 68px;
+    width: 300px;
+    line-height: 72px;
+  }
+  .hero .text-hero .resume-hero {
+    font-size: 26px;
+    width: 400px;
+    line-height: 30px;
+  }
+}
+@media (orientation: landscape) and (max-height: 500px) {
+  .hero .text-hero {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .hero .text-hero .title-hero {
+    padding-left: 10px;
+  }
+}
+@media (orientation: landscape) and (max-height: 500px) and (max-height: 305px) {
+  .hero .text-hero .title-hero {
+    font-size: 32px;
+  }
+}
+@media (orientation: landscape) and (max-height: 500px) {
+  .hero .text-hero .btn-recent-work {
+    width: 15%;
+    min-width: 100px;
+    height: 40px;
+  }
+}
+@media (orientation: landscape) and (max-height: 500px) {
+  .hero .box-image-hero {
+    position: absolute;
+    right: 0;
+    opacity: 0.2;
   }
 }/*# sourceMappingURL=main.css.map */

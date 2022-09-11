@@ -1,11 +1,11 @@
 
 .hero{
     width: 90%;
-    height: calc(100vh - 110px);
+    height: calc(100vh - 135px);
     margin: 0 auto;
 
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 
     .image-line-hero{
         position: absolute;
@@ -24,6 +24,10 @@
     .text-hero{
         width: 40%;
         position: relative;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
 
         p{
             margin: 0;
@@ -31,7 +35,6 @@
         }
         .title-hero{
             font-size: 80px;
-            height: 280px;
             font-weight: 700;
             line-height: 80px;
             letter-spacing: -1px;
@@ -46,44 +49,14 @@
         }
 
         .btn-recent-work{
-            min-width: 150px;
-            height: 10%;
+            height: 8%;
+            width: 50%;
             background-color: #5684e7;
             border: none;
             border-radius: 8px;
-            margin-top: 5%;
             color: #fff;
             cursor: pointer;
         }
-
-        .box-controls{
-            position: absolute;
-            bottom: 0;
-
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-
-            width: 150px;
-            height: 50px;
-
-            .btn-scroll-down{
-                width: 40px;
-                height: 40px; 
-                font-size: 30px;
-                border-radius: 100%;
-                border: none;
-                color: #fff;
-                background-color: #c897e4;
-            
-            }
-    
-            span{
-                color:#232340 ;  
-            }
-
-        }
-
      
     }
 
@@ -116,6 +89,34 @@
             right: 0;
         }
 
+    }
+
+}
+
+.box-controls{
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 150px;
+    height: 50px;
+
+    .btn-scroll-down{
+        width: 35px;
+        height: 35px; 
+        font-size: 30px;
+        border-radius: 100%;
+        border: none;
+        color: #fff;
+        background-color: #c897e4;
+    
+    }
+
+    span{
+        color:#232340 ;  
     }
 
 }
