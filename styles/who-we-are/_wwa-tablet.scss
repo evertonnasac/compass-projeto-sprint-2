@@ -1,0 +1,44 @@
+@media(max-width: 1100px){
+
+    .who-we-are{
+        .box-header-wwa{
+            .title-wwa{
+                font-size: 48px;
+                width: 475px;
+            }
+            
+        }
+
+        .box-center-wwa{
+            .subtitle-wwa{
+                font-size: 24px;
+                width: 329px;
+            }
+           
+        }
+    
+    }
+   
+}
+
+@media (max-width:775px) {
+    .who-we-are{
+        .box-header-wwa{
+            .title-wwa{
+                font-size: 36px;
+                width: 375px;
+            }
+            
+        }
+
+        .box-center-wwa{
+            .subtitle-wwa{
+                font-size: 20px;
+                width: 250px;
+            }
+           
+        }
+    
+    }
+    
+}
