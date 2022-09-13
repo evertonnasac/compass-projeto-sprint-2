@@ -1,0 +1,84 @@
+@media (max-width:600px) {
+
+    header{
+        position: fixed;
+    }
+
+    .who-we-are{
+
+        padding: 0 20px;
+        height: 1600px;
+        margin-top: 100px;
+        justify-content: space-evenly;
+        
+        .image-triangulo-wwa{
+            display: none;
+        }
+
+        aside{
+            display: none;
+        }
+        .box-center-wwa{
+            
+            .box-header-wwa{
+                display: block;
+                padding: 0;
+
+                .box-nav-wwa{
+                    .select-year-wwa{
+                        display: inline-block;
+                        width: 75px;
+                        margin-left: 50px;
+                        background-color: #232340;
+                        color: #ffffff;
+            
+                    }
+                }
+
+
+                .title-wwa{
+                    font-size: 40px;
+                    width: 65%;
+                    line-height: 40px;
+                    margin: 25px 0;
+                }
+
+                @media (max-width:360px) {
+                    .title-wwa{
+                        font-size: 28px;
+                        line-height: 40px;
+                    }
+                }
+               
+            }
+
+            .box-image-wwa{
+                transform: scaleX(1.5);
+                position: relative;
+                left: -20%;
+                min-height: auto;
+                height: 350px;
+                width: 125%;
+            }
+
+            .subtitle-wwa, .resume-wwa{
+                max-width: 325px;
+                width: 85%;
+
+            }
+
+            .subtitle-wwa{
+                font-size: 24px;
+            }
+
+            .number-wwa{
+                border-radius: 100%;
+                background-color: #232340;
+                text-align: center;
+                position: static;
+
+            }
+        }
+    }
+    
+}

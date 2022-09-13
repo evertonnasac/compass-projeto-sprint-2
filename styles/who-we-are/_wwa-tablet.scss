@@ -14,6 +14,10 @@
                 font-size: 24px;
                 width: 329px;
             }
+
+            .resume-wwa{
+                width: 320px;
+            }
            
         }
     
@@ -21,23 +25,27 @@
    
 }
 
-@media (max-width:775px) {
+@media (max-width:870px) {
     .who-we-are{
-        .box-header-wwa{
-            .title-wwa{
-                font-size: 36px;
-                width: 375px;
-            }
-            
-        }
-
         .box-center-wwa{
+            .box-header-wwa{
+
+                .title-wwa{
+                    font-size: 36px;
+                    width: 375px;
+                }
+                
+            }
             .subtitle-wwa{
                 font-size: 20px;
                 width: 250px;
             }
-           
+            .resume-wwa{
+                width: 200px;
+            }
+
         }
+   
     
     }
     

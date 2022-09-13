@@ -10,9 +10,11 @@ p{
     width: 100%;
     height: 100vh;
     min-height: 1200px;
+
     background-image: linear-gradient(#232340, #3B3259);
 
     position: relative;
+    margin-top: 35px;
 
     display: flex;
     justify-content: flex-start;
@@ -132,6 +134,7 @@ p{
         .box-header-wwa{
 
             .box-nav-wwa{
+            
                 div{
                     border-radius: 100%;
                     height: 50px;
@@ -139,13 +142,17 @@ p{
                     font-size: 40px;
                     border: none;
                     color: #ffffff;
-                    line-height: 43px;
-                    display: inline-block;
+                    line-height: 40px;
                     text-align: center;
+                    display: inline-block;
                 }
             
-                & div:last-child{
+                & div:nth-child(2){
                     background-color: $btn-color;
+                }
+
+                .select-year-wwa{
+                    display: none;
                 }
     
             }
@@ -171,15 +178,11 @@ p{
             width: 470px;
         }
 
-        .box-resume-wwa{
-            width: 60%;
 
-            .resume-wwa{
-                font-size: 18px;
-                font-weight: 400;
-                max-width: 70%;
-            }
-
+        .resume-wwa{
+            font-size: 18px;
+            font-weight: 400;
+            width: 350px;
         }
        
     }
@@ -190,6 +193,7 @@ p{
         height: 60px;
         border: none;
         color: #ffffff;
+        border-radius: 8px;
     }
 
     .number-wwa{
