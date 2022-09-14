@@ -1,0 +1,27 @@
+@import "../abstract/patterns";
+
+@mixin nav-pages {
+
+    a{
+        border-radius: 100%;
+        height: 40px;
+        width: 40px;
+        font-size: 30px;
+        border: none;
+        color: #ffffff;
+        line-height: 30px;
+        text-align: center;
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    & a:nth-child(2){
+        background-color: $btn-color;
+    }
+
+    .select-year-wwa{
+        display: none;
+    }
+
+}
+    

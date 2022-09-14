@@ -1,0 +1,42 @@
+body, html {
+  margin: 0;
+  width: 98.8vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+.works {
+  width: 100%;
+}
+.works .header-works {
+  width: 100%;
+  display: grid;
+  grid-template-areas: "logo indice indice" "none title btn" "none subtitle subtitle";
+}
+.works .header-works .logo {
+  grid-area: logo;
+}
+.works .header-works .indice-works {
+  grid-area: indice;
+}
+.works .header-works .title-works {
+  grid-area: title;
+}
+.works .header-works .subtitle-works {
+  grid-area: subtitle;
+}
+.works .header-works .btn-contact {
+  grid-area: btn;
+}
+.works .sapiens-wom {
+  display: flex;
+}
+.works .sapiens-wom aside {
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=works-main.css.map */

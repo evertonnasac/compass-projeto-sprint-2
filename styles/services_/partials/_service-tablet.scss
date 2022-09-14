@@ -1,0 +1,41 @@
+@media (max-width: 925px) {
+    .service{
+        .box-header-service{
+            .title-service{
+                width: 470px;
+                font-size: 48px;
+            }
+        }
+
+    }
+    
+}
+
+@media (max-width: 700px){
+    .service{
+        .box-header-service{
+            .title-service{
+                width: 400px;
+                font-size: 40px;
+            }
+
+        }
+
+        .arq-service{
+            main{
+            
+                .title-arq{
+                    font-size: 28px;
+                }
+    
+                .number-arq{
+                    font-size: 120px;
+                }
+    
+            }
+        }
+            
+    }
+
+  
+}

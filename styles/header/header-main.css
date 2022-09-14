@@ -1,0 +1,81 @@
+body, html {
+  margin: 0;
+  width: 98.8vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+header {
+  width: 98.8%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  z-index: 1000;
+  top: 0;
+}
+header .content-logo strong {
+  color: #5468e7;
+  font-size: 40px;
+}
+header .content-logo img:first-child {
+  background-color: #5468e7;
+}
+header .itens-menu {
+  margin: 0;
+}
+header .itens-menu a {
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 75px;
+  color: #5468e7;
+  font-size: 18px;
+  cursor: pointer;
+}
+header .itens-menu a:hover {
+  color: #8b8b8b;
+}
+header .btn-contact {
+  background-color: #232340;
+  border-radius: 8px;
+  width: 10%;
+  height: 40%;
+  color: #fff;
+}
+header .menu-mobile {
+  display: none;
+}
+
+@media (max-width: 880px) {
+  header .itens-menu li {
+    margin-left: 50px;
+  }
+}
+@media (max-width: 880px) {
+  header .itens-menu, header .btn-contact {
+    display: none;
+  }
+  header .menu-mobile {
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 100%;
+  }
+  header .menu-mobile div {
+    position: absolute;
+    width: 100%;
+    border-top: 3px solid;
+  }
+  header .menu-mobile div:first-child {
+    top: 45%;
+  }
+  header .menu-mobile div:last-child {
+    top: 55%;
+  }
+}/*# sourceMappingURL=header-main.css.map */

@@ -1,0 +1,32 @@
+
+@mixin header-pages {
+
+        display: grid;
+        grid-template-areas:
+        "indice navi none"
+        "title navi none";
+    
+        padding: 20px 30px 0 0 ;
+        row-gap: 20px;
+    
+        .indice-wwa, .indice-service{
+            grid-area: indice;
+        }
+        .title-wwa, .title-service{
+            grid-area: title;
+        }
+        .box-nav-wwa, .box-nav-wwa{
+            grid-area: navi;
+        }
+    
+      
+        .title-wwa, .title-service{
+            width: 595px;
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 72px;
+    
+        }
+    
+    }
+

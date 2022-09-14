@@ -1,0 +1,47 @@
+.works{
+    width:100%;
+
+    .header-works{
+        width: 100%;
+
+        display: grid;
+        grid-template-areas: 
+        "logo indice indice"
+        "none title btn"
+        "none subtitle subtitle";
+
+        .logo{
+            grid-area: logo;
+
+        }
+
+        .indice-works{
+            grid-area: indice;
+        }
+
+        .title-works{
+            grid-area: title;
+        }
+
+        .subtitle-works{
+            grid-area: subtitle;
+        }
+
+        .btn-contact{
+            grid-area: btn;
+        }
+        
+    }
+
+    .sapiens-wom{
+
+        display: flex;
+
+        aside{
+            display: flex;
+            flex-direction: column;
+        }
+
+
+    }
+}
