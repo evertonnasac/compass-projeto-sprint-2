@@ -1,0 +1,54 @@
+@media (max-width:1000px) {
+
+    .works{
+        overflow: hidden;
+        .header-works{
+            .title-works{
+                font-size: 64px;
+            }
+
+            .btn-contact{
+                width: 150px;
+            }
+
+            @media (max-width:770px) {
+                .title-works{
+                    font-size: 56px;
+                }
+
+                .btn-contact{
+                    width: 100px;
+                }
+    
+    
+            }
+
+           
+
+        }
+    }
+    
+}
+
+@media (max-width:1050px) {
+    .works{
+        .box-famous-product{
+
+            .famous-product{
+                .title-famous-product{
+                    font-size: 32px;
+                }
+
+                @media (max-width:850px) {
+                    .title-famous-product{
+                        font-size: 28px;
+                    }
+    
+                }
+            }
+
+            
+        }
+    }
+    
+}

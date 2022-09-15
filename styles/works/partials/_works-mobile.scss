@@ -1,0 +1,152 @@
+@media (max-width:730px) {
+    .works{
+
+        height: 3200px;
+        justify-content: flex-start;
+        gap:150px;
+
+
+        .header-works{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            .btn-contact{
+                display: none;
+            }
+            .logo{
+                display: none;
+            }
+
+            @media (max-width: 500px) {
+                .title-works{
+                    font-size: 48px;
+                }
+                .subtitle-works{
+                    width: 80%;
+                }
+                
+            }
+            @media (max-width: 300px) {
+                .title-works{
+                    font-size: 32px;
+                }
+            }
+        }
+
+        .box-famous-product{
+            .famous-product{
+                display: none;
+            }
+        }
+
+        .box-famous-product{
+            width: 78%;
+
+            .image-sapiens-wom{
+                width: 100%;
+
+                &::after{
+                    content: "Sapiens: The Free Character.";
+                    color: #232340;
+                    width: 100%;
+
+                    font-weight: 700;
+                    font-size: 35px;
+
+
+                    @media (max-width:570px) {
+                        font-size: 28px;
+                    }
+                }
+
+                .arrow-sapiens-wom{
+
+                    width: 50px;
+                    height: 50px;
+
+                    font-size: 40px;
+                    line-height:40px;
+                    font-style: none;
+                    border: 1px solid black;
+                    border-radius: 100%;
+                    background-color: transparent;
+                    color: black;
+
+                    top: 120%;
+                    left: 0;
+                   
+                }
+                
+            }
+            .img-shadow{
+                display: none;
+            }
+
+        }
+
+        main{
+            height: 70%;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .content-right, .content-left{
+                width: 100%;
+                justify-content: space-between;
+                height: 48%;
+    
+
+                .card-3{
+                    .frame-card{
+                        img{
+                            position:static;
+                        }
+                    }
+                }
+                
+
+                .card{
+
+                    
+                    align-items: center;
+                    height: 45%;
+
+                    .frame-card{
+                        width: 100%;
+                        height: 60%;
+                        
+                        order:1;
+
+                        .arrow-card{
+                            top: 150%;
+                            left: 0;
+                        }
+                       
+                        
+                    }
+                    .title-card{
+                        width: 100%;
+                        order: 2;
+                    }
+                    .resume-card{
+                        width: 100%;
+                        order: 3;
+                    }
+
+                    @media (max-width:570px) {
+                        .title-card{
+                            font-size: 28px;
+                        }
+                        
+                    }
+
+
+                }
+            }
+        }
+        .cta{
+            display: none;
+        }
+    }
+    
+}

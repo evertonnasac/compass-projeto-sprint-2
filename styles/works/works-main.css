@@ -11,32 +11,456 @@ button {
 }
 
 .works {
+  overflow: hidden;
   width: 100%;
+  height: 3000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.works p {
+  margin: 0;
+}
+.works article, .works main {
+  z-index: 10;
+}
+.works .img-line {
+  transform: rotate(-20deg);
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 1200px;
+  left: 48%;
+  z-index: 1;
 }
 .works .header-works {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
+  height: 10%;
   display: grid;
-  grid-template-areas: "logo indice indice" "none title btn" "none subtitle subtitle";
+  grid-template-areas: "logo indice indice" "none title btn" "none subtitle navi";
+  row-gap: 5%;
+  -moz-column-gap: 2.5%;
+       column-gap: 2.5%;
 }
 .works .header-works .logo {
   grid-area: logo;
+  background-color: #546be7;
+  border-radius: 8px;
 }
 .works .header-works .indice-works {
   grid-area: indice;
+  font-size: 18px;
+  font-weight: 600;
+  color: #546be7;
 }
 .works .header-works .title-works {
   grid-area: title;
+  font-size: 84px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #232340;
 }
 .works .header-works .subtitle-works {
   grid-area: subtitle;
+  font-size: 18px;
+  font-weight: 400;
+  color: #606060;
+  width: 460px;
 }
 .works .header-works .btn-contact {
   grid-area: btn;
+  background-color: #546be7;
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  height: 65px;
+  width: 200px;
 }
-.works .sapiens-wom {
+.works .header-works .nav-works {
+  grid-area: navi;
+}
+.works .header-works .nav-works a {
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+  font-size: 30px;
+  border: none;
+  color: #ffffff;
+  line-height: 30px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+.works .header-works .nav-works a:nth-child(2) {
+  background-color: #5468e7;
+}
+.works .header-works .nav-works .select-year-wwa {
+  display: none;
+}
+.works .header-works .nav-works a:first-child {
+  color: #606060;
+}
+.works .box-famous-product {
   display: flex;
+  width: 70%;
+  height: 10%;
+  position: relative;
 }
-.works .sapiens-wom aside {
+.works .box-famous-product .famous-product {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  width: 40%;
+}
+.works .box-famous-product .famous-product button {
+  width: 75%;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #908cff;
+  color: #fff;
+  border: none;
+}
+.works .box-famous-product .famous-product .title-famous-product {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  z-index: 10;
+  width: 150%;
+}
+.works .box-famous-product .famous-product .resume-famous-product {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.4px;
+  color: #606060;
+  width: 205px;
+}
+.works .box-famous-product .image-sapiens-wom {
+  height: 400px;
+  width: 70%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  background-color: #d1ecfd;
+}
+.works .box-famous-product .image-sapiens-wom img {
+  height: 100%;
+  width: 100%;
+}
+.works .box-famous-product .image-sapiens-wom .arrow-sapiens-wom {
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+  font-size: 30px;
+  border: none;
+  color: #ffffff;
+  line-height: 30px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #546be7;
+  position: absolute;
+  right: -20px;
+  top: 80px;
+}
+.works .box-famous-product .image-sapiens-wom .arrow-sapiens-wom:hover {
+  transform: scale(1.4);
+  cursor: pointer;
+}
+.works .box-famous-product .img-shadow {
+  position: absolute;
+  right: -200px;
+  top: -60%;
+  height: 140%;
+}
+.works main {
+  height: 50%;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.works main aside {
+  width: 40%;
+  align-items: center;
+}
+.works main .content-left, .works main .content-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80%;
+}
+.works main .content-left .card, .works main .content-right .card {
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  width: 80%;
+}
+.works main .content-left .card .title-card, .works main .content-right .card .title-card {
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  color: #232340;
+}
+.works main .content-left .card .resume-card, .works main .content-right .card .resume-card {
+  font-size: 18px;
+  font-weight: 400;
+  color: #606060;
+}
+.works main .content-left .card .frame-card, .works main .content-right .card .frame-card {
+  position: relative;
+}
+.works main .content-left .card .frame-card .arrow-card, .works main .content-right .card .frame-card .arrow-card {
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  line-height: 40px;
+  font-style: none;
+  border: 1px solid black;
+  border-radius: 100%;
+  position: absolute;
+  left: 95%;
+  bottom: 25%;
+}
+.works main .content-left .card .frame-card .arrow-card:hover, .works main .content-right .card .frame-card .arrow-card:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.works main .content-left {
+  align-self: flex-end;
+  justify-content: space-around;
+}
+.works main .content-left .card {
+  align-items: flex-end;
+}
+.works main .content-left .card-1 .title-card, .works main .content-left .card-1 .resume-card {
+  width: 70%;
+}
+.works main .content-left .card-1 .frame-card {
+  width: 75%;
+  height: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffce79;
+}
+.works main .content-left .card-1 .frame-card img {
+  width: 75%;
+  height: 70%;
+}
+.works main .content-left .card-1 .title-card, .works main .content-left .card-1 .resume-card {
+  width: 75%;
+}
+.works main .content-left .card-2 .title-card, .works main .content-left .card-2 .resume-card {
+  width: 60%;
+}
+.works main .content-left .card-2 .frame-card {
+  height: 75%;
+  width: 60%;
+  background-color: #ffadd0;
+  display: flex;
+  align-items: center;
+}
+.works main .content-left .card-2 .frame-card img {
+  width: 100%;
+  height: 100%;
+}
+.works main .content-right {
+  justify-content: space-around;
+}
+.works main .content-right .card-3 .title-card, .works main .content-right .card-3 .resume-card {
+  width: 65%;
+}
+.works main .content-right .card-3 .frame-card {
+  width: 60%;
+  height: 45%;
+  background-color: #e8beff;
+  position: relative;
+}
+.works main .content-right .card-3 .frame-card img {
+  position: absolute;
+  left: -40%;
+  bottom: 5%;
+  width: 100%;
+  height: 80%;
+}
+.works main .content-right .card-4 .title-card, .works main .content-right .card-4 .resume-card {
+  width: 70%;
+}
+.works main .content-right .card-4 .frame-card {
+  width: 75%;
+  height: 65%;
+  text-align: center;
+  background-color: #d1ecfd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.works main .content-right .card-4 .frame-card img {
+  width: 75%;
+  height: 70%;
+}
+.works .cta {
+  width: 80%;
+  height: 20%;
+  margin: 0 auto;
+}
+.works .cta img {
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .works {
+    overflow: hidden;
+  }
+  .works .header-works .title-works {
+    font-size: 64px;
+  }
+  .works .header-works .btn-contact {
+    width: 150px;
+  }
+}
+@media (max-width: 1000px) and (max-width: 770px) {
+  .works .header-works .title-works {
+    font-size: 56px;
+  }
+  .works .header-works .btn-contact {
+    width: 100px;
+  }
+}
+@media (max-width: 1050px) {
+  .works .box-famous-product .famous-product .title-famous-product {
+    font-size: 32px;
+  }
+}
+@media (max-width: 1050px) and (max-width: 850px) {
+  .works .box-famous-product .famous-product .title-famous-product {
+    font-size: 28px;
+  }
+}
+@media (max-width: 730px) {
+  .works {
+    height: 3200px;
+    justify-content: flex-start;
+    gap: 150px;
+  }
+  .works .header-works {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .works .header-works .btn-contact {
+    display: none;
+  }
+  .works .header-works .logo {
+    display: none;
+  }
+}
+@media (max-width: 730px) and (max-width: 500px) {
+  .works .header-works .title-works {
+    font-size: 48px;
+  }
+  .works .header-works .subtitle-works {
+    width: 80%;
+  }
+}
+@media (max-width: 730px) and (max-width: 300px) {
+  .works .header-works .title-works {
+    font-size: 32px;
+  }
+}
+@media (max-width: 730px) {
+  .works .box-famous-product .famous-product {
+    display: none;
+  }
+}
+@media (max-width: 730px) {
+  .works .box-famous-product {
+    width: 78%;
+  }
+  .works .box-famous-product .image-sapiens-wom {
+    width: 100%;
+  }
+  .works .box-famous-product .image-sapiens-wom::after {
+    content: "Sapiens: The Free Character.";
+    color: #232340;
+    width: 100%;
+    font-weight: 700;
+    font-size: 35px;
+  }
+}
+@media (max-width: 730px) and (max-width: 570px) {
+  .works .box-famous-product .image-sapiens-wom::after {
+    font-size: 28px;
+  }
+}
+@media (max-width: 730px) {
+  .works .box-famous-product .image-sapiens-wom .arrow-sapiens-wom {
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    line-height: 40px;
+    font-style: none;
+    border: 1px solid black;
+    border-radius: 100%;
+    background-color: transparent;
+    color: black;
+    top: 120%;
+    left: 0;
+  }
+}
+@media (max-width: 730px) {
+  .works .box-famous-product .img-shadow {
+    display: none;
+  }
+}
+@media (max-width: 730px) {
+  .works main {
+    height: 70%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .works main .content-right, .works main .content-left {
+    width: 100%;
+    justify-content: space-between;
+    height: 48%;
+  }
+  .works main .content-right .card-3 .frame-card img, .works main .content-left .card-3 .frame-card img {
+    position: static;
+  }
+  .works main .content-right .card, .works main .content-left .card {
+    align-items: center;
+    height: 45%;
+  }
+  .works main .content-right .card .frame-card, .works main .content-left .card .frame-card {
+    width: 100%;
+    height: 60%;
+    order: 1;
+  }
+  .works main .content-right .card .frame-card .arrow-card, .works main .content-left .card .frame-card .arrow-card {
+    top: 150%;
+    left: 0;
+  }
+  .works main .content-right .card .title-card, .works main .content-left .card .title-card {
+    width: 100%;
+    order: 2;
+  }
+  .works main .content-right .card .resume-card, .works main .content-left .card .resume-card {
+    width: 100%;
+    order: 3;
+  }
+}
+@media (max-width: 730px) and (max-width: 570px) {
+  .works main .content-right .card .title-card, .works main .content-left .card .title-card {
+    font-size: 28px;
+  }
+}
+@media (max-width: 730px) {
+  .works .cta {
+    display: none;
+  }
 }/*# sourceMappingURL=works-main.css.map */
