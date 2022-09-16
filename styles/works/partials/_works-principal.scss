@@ -58,7 +58,7 @@
         display: grid;
         grid-template-areas: 
         "logo indice indice"
-        "none title btn"
+        "none title navi"
         "none subtitle navi";
 
         row-gap: 5%;
@@ -257,8 +257,9 @@
 
                         font-size: 30px;
                         line-height:30px;
-                        font-style: none;
+                        text-decoration: none;
                         border: 1px solid black;
+                        color: #232340;
                         border-radius: 100%;
 
                         position: absolute;

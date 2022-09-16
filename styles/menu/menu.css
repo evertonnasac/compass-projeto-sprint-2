@@ -1,14 +1,14 @@
 .menu-left {
-  position: absolute;
+  position: fixed;
   left: -105vw;
   height: 105vh;
   width: 100vw;
-  z-index: 1000;
+  z-index: 10000;
   background-color: #232340;
   color: #595976;
   display: flex;
   flex-direction: column;
-  transition: left 1.3s ease-in-out;
+  transition: left 1s ease-in-out;
 }
 .menu-left .top-menu {
   width: 95%;
@@ -25,10 +25,20 @@
   font-size: 40px;
   color: #fff;
   margin: 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+.menu-left .top-menu .box-logo-menu p strong {
+  color: #546be7;
+}
+.menu-left .top-menu .box-logo-menu img {
+  background-color: #546be7;
+  border-radius: 8px;
 }
 .menu-left .top-menu img {
   height: 40px;
-  width: 50px;
+  width: 40px;
+  cursor: pointer;
 }
 .menu-left .links-menu {
   height: 80%;

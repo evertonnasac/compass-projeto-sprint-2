@@ -58,7 +58,7 @@ button {
   margin-top: 25px;
   width: 90%;
   display: grid;
-  grid-template-areas: "logo indice indice" "none title navi";
+  grid-template-areas: "logo indice navi" "none title navi";
   row-gap: 20px;
   -moz-column-gap: 3%;
        column-gap: 3%;
@@ -230,29 +230,30 @@ button {
     font-size: 120px;
   }
 }
-@media (max-width: 620px) {
+@media (max-width: 650px) {
   .service {
     height: 2200px;
     display: flex;
     flex-direction: column;
+    margin-top: 100px;
   }
   .service .box-header-service {
     display: flex;
     flex-direction: column;
   }
 }
-@media (max-width: 620px) and (max-width: 380px) {
+@media (max-width: 650px) and (max-width: 380px) {
   .service .box-header-service .title-service {
     width: 100%;
     font-size: 32px;
   }
 }
-@media (max-width: 620px) {
+@media (max-width: 650px) {
   .service .box-header-service img {
     display: none;
   }
 }
-@media (max-width: 620px) {
+@media (max-width: 650px) {
   .service .content-icons {
     width: 85%;
     height: 850px;
@@ -273,7 +274,7 @@ button {
     width: 20%;
   }
 }
-@media (max-width: 620px) {
+@media (max-width: 650px) {
   .service .arq-service {
     flex-direction: column;
     gap: 25px;

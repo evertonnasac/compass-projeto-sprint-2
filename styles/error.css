@@ -1,0 +1,24 @@
+
+main{
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-err{
+
+    width: 50%;
+    height: 50%;
+}
+
+.logo{
+    background-color: #546be7;
+    border-radius: 8px;
+}
+
+h2,h3{
+    color: #595976;
+}

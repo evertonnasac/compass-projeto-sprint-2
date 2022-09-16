@@ -42,7 +42,7 @@ button {
   margin: 0 auto;
   height: 10%;
   display: grid;
-  grid-template-areas: "logo indice indice" "none title btn" "none subtitle navi";
+  grid-template-areas: "logo indice indice" "none title navi" "none subtitle navi";
   row-gap: 5%;
   -moz-column-gap: 3%;
        column-gap: 3%;
@@ -221,8 +221,9 @@ button {
   height: 40px;
   font-size: 30px;
   line-height: 30px;
-  font-style: none;
+  text-decoration: none;
   border: 1px solid black;
+  color: #232340;
   border-radius: 100%;
   position: absolute;
   left: 95%;
@@ -352,6 +353,13 @@ button {
     justify-content: flex-start;
     gap: 150px;
   }
+}
+@media (max-width: 730px) and (max-width: 650px) {
+  .works {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 730px) {
   .works .header-works {
     display: flex;
     flex-direction: column;

@@ -1,9 +1,12 @@
 
-@media (max-width:880px){
+@media (max-width:650px){
 
     header{
+
+        position: fixed;
     
-        .itens-menu, .btn-contact{
+    
+        .itens-menu, .btn-contact-header{
             display: none;
         }
 

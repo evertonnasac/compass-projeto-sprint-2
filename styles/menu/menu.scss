@@ -1,10 +1,10 @@
 .menu-left{
-    position: absolute;
+    position: fixed;
     left: -105vw;
     height: 105vh;
     width: 100vw;
 
-    z-index: 1000;
+    z-index: 10000;
     
 
     background-color: #232340;
@@ -13,7 +13,7 @@
     display: flex;
     flex-direction: column;
 
-    transition: left 1.3s ease-in-out;
+    transition: left 1s ease-in-out;
 
 
     .top-menu{
@@ -33,12 +33,25 @@
                 font-size: 40px;
                 color: #fff;
                 margin: 0;
+                font-weight: bold;
+                cursor: pointer;
+
+                strong{
+                    color: #546be7
+                }
+            }
+
+            img{
+                background-color: #546be7;
+                border-radius: 8px;
+                
             }
         }
 
         img{
             height: 40px;
-            width: 50px;
+            width: 40px;
+            cursor: pointer;
         }
 
     }

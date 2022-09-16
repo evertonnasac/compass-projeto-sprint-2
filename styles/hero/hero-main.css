@@ -68,6 +68,7 @@ p {
   border-radius: 8px;
   color: #fff;
   cursor: pointer;
+  z-index: 1000;
 }
 .hero .box-image-hero {
   width: 60%;
@@ -141,6 +142,7 @@ p {
   .hero {
     flex-direction: column;
     justify-content: flex-end;
+    margin-top: 100px;
   }
   .hero .image-line-hero {
     top: -25px;

@@ -22,20 +22,27 @@ header {
   z-index: 1000;
   top: 0;
 }
+header .content-logo {
+  cursor: pointer;
+}
 header .content-logo strong {
   color: #5468e7;
   font-size: 40px;
 }
 header .content-logo img:first-child {
   background-color: #5468e7;
+  height: 35px;
+  width: 35px;
+  border-radius: 8px;
 }
 header .itens-menu {
   margin: 0;
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
 }
 header .itens-menu a {
-  display: inline-block;
   text-decoration: none;
-  margin-left: 75px;
   color: #5468e7;
   font-size: 18px;
   cursor: pointer;
@@ -43,15 +50,16 @@ header .itens-menu a {
 header .itens-menu a:hover {
   color: #8b8b8b;
 }
-header .btn-contact {
+header .btn-contact-header {
   background-color: #232340;
   border-radius: 8px;
-  width: 10%;
+  width: 15%;
   height: 40%;
   color: #fff;
 }
 header .menu-mobile {
   display: none;
+  cursor: pointer;
 }
 
 @media (max-width: 880px) {
@@ -59,8 +67,11 @@ header .menu-mobile {
     margin-left: 50px;
   }
 }
-@media (max-width: 880px) {
-  header .itens-menu, header .btn-contact {
+@media (max-width: 650px) {
+  header {
+    position: fixed;
+  }
+  header .itens-menu, header .btn-contact-header {
     display: none;
   }
   header .menu-mobile {
