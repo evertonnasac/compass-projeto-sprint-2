@@ -21,12 +21,13 @@
 .works{
     overflow: hidden;
     width:100%;
-    height: 3000px;
+    height: 2500px;
+    margin-top: 25px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
     p{
         margin: 0;
@@ -61,7 +62,7 @@
         "none subtitle navi";
 
         row-gap: 5%;
-        column-gap: 2.5%;
+        column-gap: 3%;
 
         .logo{
             grid-area: logo;
@@ -251,11 +252,11 @@
 
                     .arrow-card{
 
-                        width: 50px;
-                        height: 50px;
+                        width: 40px;
+                        height: 40px;
 
-                        font-size: 40px;
-                        line-height:40px;
+                        font-size: 30px;
+                        line-height:30px;
                         font-style: none;
                         border: 1px solid black;
                         border-radius: 100%;
@@ -263,6 +264,7 @@
                         position: absolute;
                         left: 95%;
                         bottom: 25%;
+                        text-align: center;
                     }   
 
                     .arrow-card:hover{

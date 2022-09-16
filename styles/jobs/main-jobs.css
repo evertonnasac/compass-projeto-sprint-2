@@ -1,0 +1,159 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body, html {
+  font-family: "Roboto";
+  margin: 0;
+  width: 98.8vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+.jobs {
+  width: 100%;
+  height: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  background-image: linear-gradient(360deg, rgba(255, 255, 255, 0.0001) 0%, rgba(237, 229, 240, 0.504289) 100%);
+}
+.jobs p {
+  margin: 0;
+}
+.jobs .jb-content-left {
+  height: 35%;
+  width: 80%;
+  max-width: 400px;
+  margin-top: 25px;
+  display: grid;
+  grid-template: "logo indice" "none title" "none resume" "none arrow";
+  -moz-column-gap: 5%;
+       column-gap: 5%;
+}
+.jobs .jb-content-left .logo {
+  grid-area: logo;
+  width: 25px;
+  height: 25px;
+  border-radius: 8px;
+  background-color: #546be7;
+}
+.jobs .jb-content-left .jb-indice {
+  grid-area: indice;
+  color: #546be7;
+  font-weight: 700;
+  font-size: 18px;
+}
+.jobs .jb-content-left .jb-title {
+  grid-area: title;
+  font-size: 110px;
+  font-weight: 700;
+  letter-spacing: -0.2;
+  color: #232340;
+}
+.jobs .jb-content-left .jb-resume {
+  grid-area: resume;
+  font-size: 18px;
+  font-weight: 400;
+  color: #232340;
+}
+.jobs .jb-content-left .jb-arrow {
+  grid-area: arrow;
+  text-decoration: none;
+  color: #232340;
+}
+.jobs .jb-content-left .jb-arrow::after {
+  content: "→";
+  font-size: 30px;
+  color: #232340;
+}
+.jobs main {
+  margin-top: 25px;
+  width: 45%;
+  max-width: 400px;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.jobs main p {
+  color: #232340;
+}
+.jobs main .jb-card {
+  box-sizing: border-box;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  border-radius: 28px;
+  background-color: #fff;
+  padding-left: 5%;
+  cursor: pointer;
+}
+.jobs main .jb-card-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+}
+.jobs main .jb-card-subtitle {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+.jobs main .jb-card-arrow {
+  text-decoration: none;
+  width: 10%;
+  font-size: 30px;
+  margin: 0;
+}
+.jobs main img {
+  position: absolute;
+  right: 2%;
+  width: 30%;
+  height: 80%;
+}
+.jobs main div:nth-child(2) {
+  background-color: #232340;
+}
+.jobs main div:nth-child(2) p, .jobs main div:nth-child(2) a {
+  color: #fff;
+}
+
+@media (max-width: 730px) {
+  .jobs .jb-content-left .jb-title {
+    font-size: 80px;
+  }
+}
+@media (max-width: 730px) and (max-width: 675px) {
+  .jobs main .jb-card .jb-card-title {
+    font-size: 18px;
+  }
+  .jobs main .jb-card .jb-card-subtitle {
+    font-size: 16px;
+  }
+}
+@media (max-width: 650px) {
+  .jobs {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .jobs .jb-content-left {
+    width: 90%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .jobs .jb-content-left .logo {
+    display: none;
+  }
+  .jobs main {
+    width: 90%;
+  }
+}/*# sourceMappingURL=main-jobs.css.map */

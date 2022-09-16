@@ -1,0 +1,28 @@
+@media (max-width:730px) {
+    .jobs{
+        .jb-content-left{
+            .jb-title{
+                font-size: 80px;
+            }
+        }
+
+        @media (max-width:675px){
+            main{
+                .jb-card{
+                    .jb-card-title{
+                        font-size: 18px;
+    
+                    }
+                    .jb-card-subtitle{
+                        font-size: 16px;
+                    }
+                    
+                }
+            }
+    
+        }
+    }
+    
+   
+    
+}

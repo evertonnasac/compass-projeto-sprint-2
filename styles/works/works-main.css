@@ -1,4 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 body, html {
+  font-family: "Roboto";
   margin: 0;
   width: 98.8vw;
   min-height: 100vh;
@@ -13,11 +15,12 @@ button {
 .works {
   overflow: hidden;
   width: 100%;
-  height: 3000px;
+  height: 2500px;
+  margin-top: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .works p {
   margin: 0;
@@ -41,8 +44,8 @@ button {
   display: grid;
   grid-template-areas: "logo indice indice" "none title btn" "none subtitle navi";
   row-gap: 5%;
-  -moz-column-gap: 2.5%;
-       column-gap: 2.5%;
+  -moz-column-gap: 3%;
+       column-gap: 3%;
 }
 .works .header-works .logo {
   grid-area: logo;
@@ -214,16 +217,17 @@ button {
   position: relative;
 }
 .works main .content-left .card .frame-card .arrow-card, .works main .content-right .card .frame-card .arrow-card {
-  width: 50px;
-  height: 50px;
-  font-size: 40px;
-  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  line-height: 30px;
   font-style: none;
   border: 1px solid black;
   border-radius: 100%;
   position: absolute;
   left: 95%;
   bottom: 25%;
+  text-align: center;
 }
 .works main .content-left .card .frame-card .arrow-card:hover, .works main .content-right .card .frame-card .arrow-card:hover {
   transform: scale(1.2);
@@ -400,10 +404,10 @@ button {
 }
 @media (max-width: 730px) {
   .works .box-famous-product .image-sapiens-wom .arrow-sapiens-wom {
-    width: 50px;
-    height: 50px;
-    font-size: 40px;
-    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    line-height: 30px;
     font-style: none;
     border: 1px solid black;
     border-radius: 100%;

@@ -1,5 +1,8 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 body, html {
+  font-family: "Roboto";
   margin: 0;
   width: 98.8vw;
   min-height: 100vh;
@@ -12,6 +15,7 @@ button {
 }
 
 body, html {
+  font-family: "Roboto";
   margin: 0;
   width: 98.8vw;
   min-height: 100vh;
@@ -51,7 +55,7 @@ button {
   z-index: 10;
 }
 .service .box-header-service {
-  margin-top: 100px;
+  margin-top: 25px;
   width: 90%;
   display: grid;
   grid-template-areas: "logo indice indice" "none title navi";
@@ -71,6 +75,7 @@ button {
   grid-area: indice;
   font-size: 18px;
   font-weight: 600;
+  color: #5468e7;
 }
 .service .box-header-service .title-service {
   grid-area: title;
@@ -78,7 +83,8 @@ button {
   width: 660px;
   font-size: 64px;
   letter-spacing: -0.5px;
-  font: 700;
+  color: #232340;
+  font-weight: 700;
 }
 .service .box-header-service .box-nav-service {
   grid-area: navi;
@@ -123,6 +129,7 @@ button {
   align-items: center;
   justify-content: center;
   background-color: #fff;
+  color: #5468e7;
   cursor: pointer;
 }
 .service .content-icons .image-icons img {
@@ -132,6 +139,7 @@ button {
 .service .content-icons .image-icons:hover {
   transform: scaleY(1.3);
   background-color: #5468e7;
+  color: #fff;
 }
 .service .arq-service {
   display: flex;
@@ -181,6 +189,10 @@ button {
   background-color: #5468e7;
   border-radius: 8px;
 }
+.service .arq-service main .header-arquive .indice-arcv {
+  color: #232340;
+  font-weight: 600;
+}
 .service .arq-service main .title-arq {
   font-size: 32px;
   font-weight: 700;
@@ -189,6 +201,7 @@ button {
 .service .arq-service main .number-arq {
   font-size: 200px;
   font-weight: 600;
+  color: #5468e7;
 }
 .service .arq-service main .number-arq::after {
   content: "😎Successful Projects";
@@ -196,6 +209,7 @@ button {
   display: block;
   width: 200px;
   text-align: center;
+  color: #000;
 }
 
 @media (max-width: 925px) {

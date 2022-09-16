@@ -1,4 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 body, html {
+  font-family: "Roboto";
   margin: 0;
   width: 98.8vw;
   min-height: 100vh;
@@ -19,6 +21,7 @@ p {
   width: 100%;
   height: 100vh;
   min-height: 1200px;
+  margin-bottom: 50px;
   background-image: linear-gradient(#232340, #3B3259);
   position: relative;
   margin-top: 35px;
@@ -127,7 +130,7 @@ p {
   display: none;
 }
 .who-we-are .box-center-wwa .box-image-wwa {
-  width: 80%;
+  width: 90%;
   height: 33%;
   min-height: 530px;
 }

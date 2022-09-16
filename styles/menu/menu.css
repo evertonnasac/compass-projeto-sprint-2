@@ -1,0 +1,51 @@
+.menu-left {
+  position: absolute;
+  left: -105vw;
+  height: 105vh;
+  width: 100vw;
+  z-index: 1000;
+  background-color: #232340;
+  color: #595976;
+  display: flex;
+  flex-direction: column;
+  transition: left 1.3s ease-in-out;
+}
+.menu-left .top-menu {
+  width: 95%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.menu-left .top-menu .box-logo-menu {
+  width: 50%;
+  display: flex;
+}
+.menu-left .top-menu .box-logo-menu p {
+  font-size: 40px;
+  color: #fff;
+  margin: 0;
+}
+.menu-left .top-menu img {
+  height: 40px;
+  width: 50px;
+}
+.menu-left .links-menu {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10%;
+}
+.menu-left .links-menu a {
+  color: #595976;
+  font-size: 32px;
+  text-decoration: none;
+}
+.menu-left .links-menu a:hover {
+  color: #fff;
+}
+
+.menu-active {
+  left: 0;
+}/*# sourceMappingURL=menu.css.map */

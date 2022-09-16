@@ -1,0 +1,157 @@
+
+
+.jobs{
+
+    width: 100%;
+    height: 900px;
+    margin: 0 auto;
+   
+
+    display: flex;
+    justify-content: space-around;
+    
+
+    background-image: linear-gradient(360deg, rgba(255,255,255, 0.0001) 0%,
+    rgba(237,229,240, 0.504289) 100% );
+
+    p{
+        margin: 0;
+        
+    }
+
+    .jb-content-left{
+        
+        height: 35%;
+        width: 80%;
+        max-width: 400px;
+        margin-top: 25px;
+
+
+        display: grid;
+        grid-template:
+        "logo indice"
+        "none title"
+        "none resume"
+        "none arrow";
+
+        column-gap: 5%;
+
+        .logo{
+            grid-area: logo;
+            width: 25px;
+            height: 25px;
+            border-radius: 8px;
+            background-color: #546be7;
+        }
+
+        .jb-indice{
+            grid-area: indice;
+            color: #546be7;
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        .jb-title{
+            grid-area: title;
+            font-size: 110px;
+            font-weight: 700;
+            letter-spacing: -0.2;
+            color: #232340;
+        }
+        .jb-resume{
+            grid-area: resume;
+            font-size: 18px;
+            font-weight: 400;
+            color: #232340;
+        }
+        .jb-arrow{
+            grid-area: arrow;
+            text-decoration: none;
+            color: #232340;
+
+            &::after{
+               content: "\2192";
+               font-size: 30px;
+               color: #232340;
+
+            }
+            
+        }
+    }
+
+    main{
+        margin-top: 25px;
+
+
+       p{
+        color: #232340;
+       }
+
+        width: 45%;
+        max-width: 400px;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        .jb-card{
+            box-sizing: border-box;
+
+            
+            width: 100%;
+            height: 20%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            position: relative;
+           
+
+            border-radius: 28px;
+            background-color: #fff;
+            padding-left: 5%;
+            cursor: pointer;
+
+            }
+
+
+            .jb-card-title{
+                font-size: 22px;
+                font-weight: 700;
+                margin: 0;
+                
+            }
+            .jb-card-subtitle{
+                
+                font-size: 16px;
+                font-weight: 700;
+                margin: 0;
+            }
+            .jb-card-arrow{
+                text-decoration: none;
+                width: 10%;
+                font-size: 30px;
+                margin: 0;
+            }
+
+            img{
+                position: absolute;
+                right: 2%;
+                width: 30%;
+                height: 80%;
+                
+
+            }
+          
+            & div:nth-child(2){
+                background-color: #232340;
+                p,a{
+                    color: #fff;
+                }
+            }
+        }
+
+    }
+    
+

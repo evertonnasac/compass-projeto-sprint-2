@@ -43,7 +43,7 @@
     }
 
     .box-header-service{
-        margin-top: 100px;
+        margin-top: 25px;
         width: 90%;
 
        
@@ -70,6 +70,7 @@
 
             font-size: 18px;
             font-weight: 600;
+            color: #5468e7;
            
         }
         .title-service{
@@ -80,7 +81,8 @@
 
             font-size: 64px;
             letter-spacing: -0.5px;
-            font: 700;
+            color: #232340;
+            font-weight: 700;
         }
 
         .box-nav-service{
@@ -120,6 +122,8 @@
             justify-content: center;
 
             background-color: #fff;
+            color: #5468e7;
+
             cursor: pointer;
             
             img{
@@ -131,6 +135,7 @@
         .image-icons:hover{
             transform: scaleY(1.3);
             background-color: #5468e7;
+            color: #fff;
 
         
         }
@@ -194,6 +199,11 @@
                 img{
                     @include style-logo;
                 }
+
+                .indice-arcv{
+                    color: #232340;
+                    font-weight: 600;
+                }
             }
 
             .title-arq{
@@ -205,6 +215,7 @@
             .number-arq{
                 font-size: 200px;
                 font-weight: 600;
+                color: #5468e7;
             }
 
             .number-arq::after{
@@ -213,6 +224,7 @@
                 display: block;
                 width: 200px;;
                 text-align: center;
+                color: #000;
 
             }
 
